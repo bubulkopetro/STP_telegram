@@ -105,12 +105,12 @@ def stop(message: types.Message):
         del users[users[message.chat.id]]
         del users[message.chat.id]
 
-        print(users, freeid)  # Debug purpose, you can remove that line
+        print(users, freeid) 
     elif message.chat.id == freeid:
         bot.send_message(message.chat.id, 'Stopping...')
         freeid = None
 
-        print(users, freeid)  # Debug purpose, you can remove that line
+        print(users, freeid)  
     else:
         bot.send_message(message.chat.id, 'You are not in search!')
 
